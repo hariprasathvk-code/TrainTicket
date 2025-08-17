@@ -73,7 +73,19 @@ int hasReservation;
 }
 
 void processDiscountTicket() {
-   
+   int discountTicket;
+    string doc;
+    cout << "\nDiscount Ticket\n";
+    cout << "Do you have discount? (1 = Yes, 0 = No): ";
+    cin >> discountTicket;
+
+    if (discountTicket == 1) {
+        cout << "Show document: ";
+        cin >> doc;
+        cout << "Verified: " << doc << endl;
+    } else {
+        cout << "Normal ticket.\n";
+    }
 }
 
 
