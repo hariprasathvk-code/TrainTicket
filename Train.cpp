@@ -24,7 +24,7 @@ int main() {
 
 void buyTicket() {
     int needSeatReservation;
-    cout << "\n[Buy Ticket]\n";
+    cout << "\nBuy Ticket\n";
     cout << "Reserve a seat? (1 = Yes, 0 = No): ";
     cin >> needSeatReservation;
 
@@ -44,7 +44,17 @@ void buyTicket() {
 }
 
 void collectTicket() {
-    
+int collectOption;
+    cout << "\nCollect Ticket\n";
+    cout << "Method (1 = Mail, 2 = Machine): ";
+    cin >> collectOption;
+
+    if (collectOption == 1) {
+        cout << "Check mailbox in 3 days.\n";
+    } else if (collectOption == 2) {
+        cout << "Ticket printed from machine.\n";
+    } else {
+        cout << "Invalid option.\n";
 }
 
 void checkReservation() {
