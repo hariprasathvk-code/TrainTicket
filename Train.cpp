@@ -90,5 +90,14 @@ void processDiscountTicket() {
 
 
 void leaveTrain() {
-    
+    int arriveDestination;
+    cout << "\nLeave Train\n";
+    cout << "Reached destination? (1 = Yes, 0 = No): ";
+    cin >> arriveDestination;
+
+    if (arriveDestination == 1) {
+        cout << "You have arrived.\n";
+    } else {
+        cout << "Still traveling...\n";
+    }
 }
