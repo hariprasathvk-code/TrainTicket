@@ -58,7 +58,18 @@ int collectOption;
 }
 
 void checkReservation() {
-    
+int hasReservation;
+    cout << "\nCheck Reservation\n";
+    cout << "Do you have a reservation? (1 = Yes, 0 = No): ";
+    cin >> hasReservation;
+
+    if (hasReservation == 1) {
+        cout << "Go to your seat.\n";
+    } else {
+        cout << "Find an empty seat.\n";
+    }
+
+    cout << "Inspector checking ticket.\n";
 }
 
 void processDiscountTicket() {
