@@ -18,7 +18,7 @@ int main() {
     processDiscountTicket();  
     leaveTrain();             
 
-    cout << "\n--- End of Journey --- \n";
+    cout << "\n  End of Journey \n";
     return 0;
 }
 
@@ -44,7 +44,7 @@ void buyTicket() {
 }
 
 void collectTicket() {
-int collectOption;
+    int collectOption;
     cout << "\nCollect Ticket\n";
     cout << "Method (1 = Mail, 2 = Machine): ";
     cin >> collectOption;
@@ -55,10 +55,13 @@ int collectOption;
         cout << "Ticket printed from machine.\n";
     } else {
         cout << "Invalid option.\n";
+    }
+
+    cout << "Boarding train...\n";
 }
 
 void checkReservation() {
-int hasReservation;
+    int hasReservation;
     cout << "\nCheck Reservation\n";
     cout << "Do you have a reservation? (1 = Yes, 0 = No): ";
     cin >> hasReservation;
@@ -69,11 +72,11 @@ int hasReservation;
         cout << "Find an empty seat.\n";
     }
 
-    cout << "Inspector checking ticket.\n";
+    cout << "Inspector checking ticket...\n";
 }
 
 void processDiscountTicket() {
-   int discountTicket;
+    int discountTicket;
     string doc;
     cout << "\nDiscount Ticket\n";
     cout << "Do you have discount? (1 = Yes, 0 = No): ";
